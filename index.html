@@ -17,7 +17,18 @@
       <button v-on:dblclick="add(10)">Add 10 Years</button>
       <button @dblclick="subtract(10)">Subtract 10 Years</button>
       <p>My age is {{age}}</p>
+
+
+      <h3>Keyboard Events</h3>
+      <label>Name:</label>
+      <input type="text" @keyup="logName">
+      <label>Age</label>
+      <input type="text" v-on:keyup.alt.enter="logAge">
     </div>
+
+
+
+
 
     <script src="app.js"></script>
   </body>
