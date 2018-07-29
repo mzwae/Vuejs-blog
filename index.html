@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="vue-app">
-      <h1>{{name}}</h1>
+      <h1>My name is {{name}}, and I'm {{age}} years old.</h1>
       <a v-bind:href="website">The google search engine</a>
 
       <h3>Events</h3>
@@ -24,6 +24,29 @@
       <input type="text" @keyup="logName">
       <label>Age</label>
       <input type="text" v-on:keyup.alt.enter="logAge">
+
+
+      <h3>Two-Way Data Binding</h3>
+
+      <label>Name:</label>
+      <input type="text" @keyup="logName" v-model="name">
+      <p>{{name}}</p>
+      <label>Age</label>
+      <input type="text" v-on:keyup.alt.enter="logAge" v-model="age">
+      <p>{{age}}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
