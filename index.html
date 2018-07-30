@@ -12,7 +12,7 @@
       <a v-bind:href="website">The google search engine</a>
 
       <h3>Events</h3>
-      <button v-on:click.once="add(1)">Add a Year</button>
+      <button v-on:click="add(1)">Add a Year</button>
       <button v-on:click="subtract(1)">Subtract a Year</button>
       <button v-on:dblclick="add(10)">Add 10 Years</button>
       <button @dblclick="subtract(10)">Subtract 10 Years</button>
@@ -34,6 +34,18 @@
       <label>Age</label>
       <input type="text" v-on:keyup.alt.enter="logAge" v-model="age">
       <p>{{age}}</p>
+
+
+      <h3>Looping through lists</h3>
+      <ul>
+        <li v-for="character in characters">{{character}}</li>
+      </ul>
+
+      <ul>
+        <li v-for="ninja in ninjas">{{ninja.name}} - {{ninja.age}}</li>
+      </ul>
+
+
 
 
 
