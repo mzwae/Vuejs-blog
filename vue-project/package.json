@@ -2,7 +2,7 @@
   "name": "vue-project",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "mzwae <mrmonjaie@gmail.com>",
+  "author": "mzwae",
   "license": "MIT",
   "private": true,
   "scripts": {
